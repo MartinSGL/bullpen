@@ -9,7 +9,6 @@ Task.prototype.complete = function () {
 }
 
 Task.prototype.save = function (){
-    console.log(this)
     console.log(`saving task ${this.name}`)
 }
 
