@@ -1,3 +1,5 @@
+//execute this files with node js
+
 var Task = function (name){
     this.name = name;
     this.completed = false;
