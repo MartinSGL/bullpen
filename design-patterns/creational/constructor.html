@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Task = function (name){
+            this.name = name;
+            this.completed = false;
+        }
+
+        Task.prototype.complete = function () {
+            console.log(`completing task: ${this.name}`)
+            this.completed = true
+        }
+
+        Task.prototype.complete = function (){
+            console.log(`saving task ${this.name}`)
+        }
+
+        var task1 = new Task('create a demo for constructor')
+        var task2 = new Task('create a demo for modules')
+        var task3 = new Task('create a demo for singletons')
+        var task4 = new Task('create a demo for prototypes')
+
+        task1.completed()
+        task2.save()
+        task3.save()
+        task4.save()
+    </script>
+</body>
+</html>
