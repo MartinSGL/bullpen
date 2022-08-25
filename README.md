@@ -19,7 +19,7 @@
 
 This repository has all the excecises that were made over the courses in **Bullpen**![**Bullpen**](https://grbacademy.com/wp-content/uploads/2020/04/BullpenSlider.jpg)
 
-It was also made for practicing git commands so our Scrum Master (SM) and Team Lead (TL) can track the work that we have been doing since we start the Bullpen.
+It was also made for practicing git commands and to our Scrum Master (SM) and Team Lead (TL) can track the work that we have been doing since we start the Bullpen.
 
 The information for these exercises will be within a [Notions Web site](https://www.notion.so/Improving-Bullpen-e4a4bb8bcd2942dbba55977b9c12df1b)
 
