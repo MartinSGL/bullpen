@@ -12,7 +12,6 @@ class Task{
     save(){
         console.log(`saving task ${this.name}`)
     }
-
 }
 
 module.exports = Task
