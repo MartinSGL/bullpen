@@ -1,8 +1,8 @@
 //execute this file with node
 //you can use either constructor function or class
 
-var Task = require('./task') //export from constructor function
-// var Task = require('./class') //export from classes avaliable from ES6 - 2015
+var Task = require('./task') //import from constructor function
+// var Task = require('./class') //import from classes avaliable from ES6 - 2015
 
 var task1 = new Task('create a demo for constructor')
 var task2 = new Task('create a demo for modules')
