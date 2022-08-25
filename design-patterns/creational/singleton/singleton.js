@@ -1,3 +1,4 @@
+//execute this code with node
 var TaskRepo = (function(){
 	var taskRepo;
 	function createRepo(){
@@ -20,20 +21,3 @@ if(repo1 === repo2){
 	console.log("same taskrepo")
 }
 
-var repo = function(){
-    var called = 0;
-    var save = function(task){
-        called++;
-        console.log(`saving ${task} called ${called} times`)
-    }
-    console.log('newing up task repo')
-    return{
-        save:save
-    }
-}
-
-var myrepo = repo()
-
-myrepo.save('fromMain')
-myrepo.save('fromMain')
-myrepo.save('fromMain')

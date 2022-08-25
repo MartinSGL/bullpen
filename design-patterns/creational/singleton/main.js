@@ -1,0 +1,10 @@
+var taskHendler = require('./taskHandler')
+var myrepo = require('./repo')
+
+myrepo.save('./fromMain')
+myrepo.save('./fromMain')
+myrepo.save('./fromMain')
+taskHendler.save()
+taskHendler.save()
+taskHendler.save()
+taskHendler.save()
