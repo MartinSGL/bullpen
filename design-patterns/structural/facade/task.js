@@ -47,6 +47,14 @@ var myTask = new Task({
     completed:false
 })
 
+
 TaskServiceWrapper.completeAndNotify(myTask)
+//this was before instead of TaskServiceWrapper.completeAndNotify(myTask)
+// TaskService.complete(myTask)
+// if(myTask.completed===true){
+//     TaskService.setCompleteDate(myTask)
+//     TaskService.notifyCompletion(myTask,myTask.user)
+//     TaskServioce.save(myTask)
+// }
 
 console.log(myTask)
