@@ -4,6 +4,7 @@ var Task = function(name){
 
     this.complete = function(){
         console.log(`completing task: ${this.name}`)
+        this.complete = true
     }
 
     this.save = function (){
