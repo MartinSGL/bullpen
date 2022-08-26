@@ -1,3 +1,4 @@
+//execute this file with node
 var Task = require('./task')
 
 //--------------------services----------------------------
