@@ -22,7 +22,7 @@ urgentTask.priority = 2
 urgentTask.notify = function(){
     console.log('notifying important people')
 }
-// urgentTask.notify() easy way to doit with out saving
+// urgentTask.notify() easy way to do it with out saving
 urgentTask.complete()
 urgentTask.save = function (){
     this.notify();

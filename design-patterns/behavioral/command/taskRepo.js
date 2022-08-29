@@ -21,7 +21,6 @@ var repo = {
 }
 
 repo.executeNoLog = function(name){
-    console.log(arguments)
     var args = Array.prototype.slice.call(arguments, 1)
     if(repo[name]){
         return repo[name].apply(repo,args)
@@ -61,7 +60,10 @@ repo.execute('save',{
     completed: false
 })
 
+
+
 console.log(repo.tasks)
+console.log(repo.commands)
 repo.tasks = {}
 console.log(repo.tasks)
 repo.replay()

@@ -1,10 +1,10 @@
 var Task = function(data){
-    this.flyweight = FlyweightFactory.get(data.project,data.priority,data.user,data.completed)
+    // this.flyweight = FlyweightFactory.get(data.project,data.priority,data.user,data.completed)
     this.name = data.name
-    // this.priority = data.priority
-    // this.project = data.project
-    // this.user = data.user
-    // this.completed = data.completed
+    this.priority = data.priority
+    this.project = data.project
+    this.user = data.user
+    this.completed = data.completed
 }
 
 function Flyweight(project,priority,user,completed){
@@ -63,7 +63,7 @@ var completed = [true, false]
 
 var initialMemory = process.memoryUsage().heapUsed;
 
-for (var i = 0; i < 1000000; i++) {
+for (var i = 0; i < 10000; i++) {
     tasks.add({
         name:'task'+i,
         priority: priorities[Math.floor((Math.random()*5))],
@@ -76,4 +76,4 @@ for (var i = 0; i < 1000000; i++) {
 var afterMemory = process.memoryUsage().heapUsed
 console.log(`used memory ${(afterMemory - initialMemory)/1000000}`)
 console.log(`tasks: ${tasks.getCount()}`)
-console.log(`flyweigth: ${FlyweightFactory.getCount()}`)
+// console.log(`flyweigth: ${FlyweightFactory.getCount()}`)
