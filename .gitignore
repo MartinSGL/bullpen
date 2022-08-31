@@ -1,3 +1,29 @@
-DS_Store
+.DS_Store
+/.DS_Store
+/**/.DS_Store
+
 node_modules
 /**/node_modules
+
+
+#storybook--------------------------------------------------
+*.pnp
+*.pnp.js
+
+# testing
+/storybook/taskbox/coverage
+
+# production
+/storybook/taskbox/build
+
+# misc
+/storybook/taskbox/.DS_Store
+/storybook/taskbox/.env.local
+/storybook/taskbox/.env.development.local
+/storybook/taskbox/.env.test.local
+/storybook/taskbox/.env.production.local
+/storybook/taskbox/.eslintcache
+
+/storybook/taskbox/npm-debug.log*
+/storybook/taskbox/yarn-debug.log*
+/storybook/taskbox/yarn-error.log*
